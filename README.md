@@ -9,8 +9,11 @@ Vous pouvez [visionner](https://www.youtube.com/watch?v=4nOdO4SDdO0) sa vidéo s
 ## Les méthodes de calcul utilisées 
 
 ### Leibniz-gregory
-Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction arctan
-      π=4n=0∑+∞​2n+1(−1)n​​
+Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction arctan pour calculer π
+voici cet fonction 
+      
+$$ π = 4 \left( \sum_{k=0}^n 2x_k^n \right) * (\sum_{k=1}^n a_k^2) $$
+
 
 Cette méthode est peu efficace et demande beaucoup de calcul , mais bien pour le benchmark. 
 Si on veut n chiffres après la virgule, il faut donc une erreur inférieur ou égale à 110n10n1​. 
