@@ -13,4 +13,7 @@ Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction ar
       π=4n=0∑+∞​2n+1(−1)n​​
 
 Cette méthode est peu efficace et demande beaucoup de calcul , mais bien pour le benchmark. 
-
+Si on veut n chiffres après la virgule, il faut donc une erreur inférieur ou égale à 110n10n1​. 
+Soit pour N :
+12N+3≤110n  ⟺  2N+3≥10n  ⟺  2N≥10n−3  ⟺  N≥10n−32
+⟺⟺⟺​2N+31​≤10n1​2N+3≥10n2N≥10n−3N≥210n−3​​
