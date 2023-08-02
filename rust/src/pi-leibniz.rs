@@ -1,6 +1,6 @@
 use std::time::Instant;
 
-const N: u64 = 100_000_000;
+const N: u64 = 10_000_000_000;
 
 fn calculate_pi(n_terms: u64) -> f64 {
     let numerator = 4.0;
