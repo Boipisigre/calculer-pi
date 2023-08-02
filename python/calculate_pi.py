@@ -1,6 +1,6 @@
 from time import time
 
-N = 100_000_000
+N = 10_000_000_000
 
 def calculate_pi(n_terms: int) -> float:
     numerator = 4.0
