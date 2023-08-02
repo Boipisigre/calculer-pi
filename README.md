@@ -10,13 +10,18 @@ Vous pouvez [visionner](https://www.youtube.com/watch?v=4nOdO4SDdO0) sa vidéo s
 
 ### Leibniz-gregory
 Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction arctan pour calculer π
-voici cet fonction 
       
-$$ π = 4 \left( \sum_{k=0}^n 2x_k^n \right) * (\sum_{k=1}^n a_k^2) $$
+$$ π = 4 \sum_{k=0}^n \frac {(-1)^n} {(2n+1)} $$
 
 
-Cette méthode est peu efficace et demande beaucoup de calcul , mais bien pour le benchmark. 
-Si on veut n chiffres après la virgule, il faut donc une erreur inférieur ou égale à 110n10n1​. 
-Soit pour N :
-12N+3≤110n  ⟺  2N+3≥10n  ⟺  2N≥10n−3  ⟺  N≥10n−32
-⟺⟺⟺​2N+31​≤10n1​2N+3≥10n2N≥10n−3N≥210n−3​​
+Cette méthode est peu efficace et demande beaucoup de calcul  toutefois elle est bien pour le benchmark.
+
+Si on veut n décimales de π, avec une erreur inférieur ou égale à    
+
+$$ \frac {1}{10^n}$$  
+
+Soit une valeur de 
+
+$$ N ​​\geq \frac {10^n -3} {2} $$
+
+
