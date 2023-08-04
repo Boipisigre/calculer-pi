@@ -6,11 +6,14 @@ Dans une première version, issue du [travail](https://github.com/sarmadgulzar/c
 
 Vous pouvez [visionner](https://www.youtube.com/watch?v=4nOdO4SDdO0) sa vidéo sur le sujet.
 
-## Les méthodes de calcul utilisées 
+## Les méthodes de calcul utilisées
+L'objectif est de calculer pour chaque méthode en python et rust les dix premières décimales de π
+
+* 3,1415926535
 
 ### Leibniz-gregory
 Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction arctan pour calculer π
-      
+
 $$ π = 4 \sum_{k=0}^n \frac {(-1)^n} {(2n+1)} $$
 
 
@@ -20,8 +23,6 @@ Si on veut n décimales de π, avec une erreur inférieur ou égale à
 
 $$ \frac {1}{10^n}$$  
 
-Soit une valeur de 
+Soit une valeur de
 
 $$ N ​​\geq \frac {10^n -3} {2} $$
-
-
