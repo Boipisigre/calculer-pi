@@ -1,7 +1,7 @@
 #![allow(unused)]
 use std::time::Instant;
 
-const N: u32 = 9;
+const N: u32 = 8;
 
 fn calculate_pi(n_terms: u32) -> f64 {
     let mut m1: f64 = 0.0;
@@ -20,7 +20,7 @@ fn calculate_pi(n_terms: u32) -> f64 {
         m4 = f64::from(1) / f64::from((8*i)+5) ;
         m5 = f64::from(1) / f64::from((8*i)+6) ;
 
-        println!("itération {}",i+1);
+        print!("itération {}",i+1);
 //        println!("m1= {}", m1);
 //        println!("m2= {}", m2);
 //        println!("m3= {}", m3);
@@ -28,7 +28,7 @@ fn calculate_pi(n_terms: u32) -> f64 {
 //        println!("m5= {}", m5);
 
         pi += m1 * ( m2-m3-m4-m5 ) as f64;
-//        println!("π = {}", pi);
+        println!("π = {}", pi);
         i += 1 ;
     }
     pi

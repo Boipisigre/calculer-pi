@@ -2,7 +2,7 @@
 from time import time
 import math
 
-N = 15;
+N = 10;
 
 def calculate_pi(n_terms: int) -> float:
     m1 = 0.0;
@@ -20,7 +20,7 @@ def calculate_pi(n_terms: int) -> float:
         m4 = 1 / ((8*i)+5) ;
         m5 = 1 / ((8*i)+6) ;
         pi += m1 * ( m2-m3-m4-m5 );
-        print(f"π = {pi:1.50f}")
+        print(f"iteration {i} π = {pi:1.20f}")
 
     return pi
 
@@ -28,6 +28,6 @@ if __name__ == "__main__":
     start = time()
     pi = calculate_pi(N)
     end = time()
-    print(f"\n final π = {pi:1.25f}")
-    print(f"valeur PI {math.pi:25f}")
-    print(f"Time elapsed: {round((end - start), 6)} seconds!")
+    print(f"\n final π = {pi:1.20f}")
+    print(f"valeur PI {math.pi:1.6f}")
+    print(f"Time elapsed: {(end - start)*1000:1.6f} Milliseconds!")
