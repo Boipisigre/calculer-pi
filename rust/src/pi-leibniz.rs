@@ -1,6 +1,6 @@
 use std::time::Instant;
 
-const N: u64 = 10_000_000_000;
+const N: u64 = 1_000_000_000;
 
 fn calculate_pi(n_terms: u64) -> f64 {
     let numerator = 4.0;
@@ -22,3 +22,6 @@ fn main() {
     println!("π = {}", pi);
     println!("Time elapsed: {:.2} seconds!", duration.as_secs_f64());
 }
+
+// π = 3.14159265
+// Time elapsed: 7.92 seconds!

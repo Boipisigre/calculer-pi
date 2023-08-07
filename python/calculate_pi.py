@@ -1,6 +1,6 @@
 from time import time
 
-N = 10_000_000_000
+N = 1_000_000_000
 
 def calculate_pi(n_terms: int) -> float:
     numerator = 4.0
@@ -18,5 +18,8 @@ if __name__ == "__main__":
     start = time()
     pi = calculate_pi(N)
     end = time()
-    print(f"π = {pi}")
+    print(f"π = {pi:1.15f}")
     print(f"Time elapsed: {round((end - start), 2)} seconds!")
+
+# π = 3.14159265
+# Time elapsed: 112.76 seconds!
