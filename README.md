@@ -14,7 +14,7 @@ L'objectif est de calculer pour chaque méthode en python et rust les dix premi�
 ### Leibniz-gregory
 Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction arctan pour calculer π
 
-$$ π = 4 \sum_{k=0}^n \frac {(-1)^n} {(2n+1)} $$
+$$ π = 4 \sum_{k=0}^n \frac {(-1)^k} {(2k+1)} $$
 
 
 Cette méthode est peu efficace et demande beaucoup de calcul  toutefois elle est bien pour le benchmark.
@@ -26,3 +26,15 @@ $$ \frac {1}{10^n}$$
 Soit une valeur de
 
 $$ N ​​\geq \frac {10^n -3} {2} $$
+
+Pour 1 milliard d'itération nous obtenons PI avec 9 décimales en 7.92 secondes en rust et 112.76 en python
+
+### BBP (Bailey-Borwein-Plouffe)
+la formule est plus compliquée est implique de pouvoir utiliser des grands nombres .
+
+$$ π = \sum_{i=0}^n \frac {1} {16^i} (\frac {4} {8i + 1} - \frac {2} {8i + 4} - \frac {1} {8i + 5} - \frac {1} {8i + 5} )$$
+
+Cette méthode est trés efficace et présente d'autres difficultés et limitations
+
+
+
