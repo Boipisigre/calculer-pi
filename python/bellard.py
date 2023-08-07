@@ -2,7 +2,7 @@
 from time import time
 import math
 
-N = 10;
+N = 15;
 
 def calculate_pi(n_terms: int) -> float:
     m1 = 0.0;
