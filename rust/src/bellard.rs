@@ -28,7 +28,7 @@ fn calculate_pi(n_terms: u32) -> f64 {
 //        println!("m5= {}", m5);
 
         pi += m1 * ( m2-m3-m4-m5 ) as f64;
-        println!("π = {}", pi);
+//        println!("π = {}", pi);
         i += 1 ;
     }
     pi
@@ -39,5 +39,5 @@ fn main() {
     let pi = calculate_pi(N);
     let duration = start.elapsed();
     println!("π = {}", pi);
-    println!("Time elapsed: {:.2} seconds!", duration.as_secs_f64());
+    println!("Time elapsed: {:.9} seconds!", duration.as_secs_f64());
 }

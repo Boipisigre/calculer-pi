@@ -36,5 +36,10 @@ $$ π = \sum_{i=0}^n \frac {1} {16^i} (\frac {4} {8i + 1} - \frac {2} {8i + 4} -
 
 Cette méthode est trés efficace et présente d'autres difficultés et limitations
 
+#### efficacité
+En python on calcule 15 décimales de π en 35 μs  
+En rust on calcule 11 décimales de π en 5 μs
 
-
+#### limitations
+En python on ne pas obtenir plus de 15 décimales  à cause des limitations des représentations mémoires des nombres..
+en Rust on peut pas obtenir plus de car 16 ^ 9 donne un dépassement de capacité de la fonction **pow**
