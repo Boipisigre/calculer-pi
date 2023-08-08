@@ -48,3 +48,5 @@ En Rust on peut pas obtenir plus de car 16 ^ 9 donne un dépassement de capacit�
 Dans le tableur cal de libreoffice   
 *  on ne peut pas calculer la valeur de PI par la méthode de Leibniz-gregory.
 * On peut calculer PI avec 14 décimales par la méthode BBP
+
+on trouve sur le net des applications calculants des décimales de pi en voici [une](https://calculatrices.app/calculatrice-de-precision-pi)
