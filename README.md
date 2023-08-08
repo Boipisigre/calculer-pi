@@ -41,5 +41,10 @@ En python on calcule 15 décimales de π en 35 μs
 En rust on calcule 11 décimales de π en 5 μs
 
 #### limitations
-En python on ne pas obtenir plus de 15 décimales  à cause des limitations des représentations mémoires des nombres..
-en Rust on peut pas obtenir plus de car 16 ^ 9 donne un dépassement de capacité de la fonction **pow**
+En python on ne pas obtenir plus de 15 décimales  à cause des limitations des représentations mémoires des nombres.
+
+En Rust on peut pas obtenir plus de car 16 ^ 9 donne un dépassement de capacité de la fonction **pow**
+
+Dans le tableur cal de libreoffice   
+*  on ne peut pas calculer la valeur de PI par la méthode de Leibniz-gregory.
+* On peut calculer PI avec 14 décimales par la méthode BBP
