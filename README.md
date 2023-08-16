@@ -50,3 +50,7 @@ Dans le tableur cal de libreoffice
 * On peut calculer PI avec 14 décimales par la méthode BBP
 
 on trouve sur le net des applications calculants des décimales de pi en voici [une](https://calculatrices.app/calculatrice-de-precision-pi)
+
+### Calcul de PI par la formule 
+
+ pi = 6*arctan(1/sqrt(3))
