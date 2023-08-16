@@ -51,6 +51,6 @@ Dans le tableur cal de libreoffice
 
 on trouve sur le net des applications calculants des décimales de pi en voici [une](https://calculatrices.app/calculatrice-de-precision-pi)
 
-### Calcul de PI par la formule 
+### Calcul de PI par la formule Arctan
 
- pi = 6*arctan(1/sqrt(3))
+ $$ pi = 6*arctan(\frac {1} {\sqrt(3)}) $$
