@@ -53,4 +53,6 @@ on trouve sur le net des applications calculants des décimales de pi en voici [
 
 ### Calcul de PI par la formule Arctan
 
- $$ pi = 6*arctan(\frac {1} {\sqrt(3)}) $$
+ $$ π = 6*arctan(\frac {1} {\sqrt(3)}) $$
+ 
+En Rust cette formule donne 38 décimales de π
