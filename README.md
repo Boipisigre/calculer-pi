@@ -55,13 +55,13 @@ on trouve sur le net des applications calculants des décimales de pi en voici [
 
  $$ π = 6*arctan(\frac {1} {\sqrt(3)}) $$
 
-En Rust cette formule donne 39 décimales de     π = 3.1415926535 8979323846 2643383279 502884197
-En Python le même calcul donne 15 décimales de  π = 3.1415926535 89793 5
-En javascript le  calcul donne 15 décimales de  π = 3.1415926535 89793 6 
+En Rust cette formule donne 39 décimales de     π = **3.1415926535 8979323846 2643383279 502884197**   
+En Python le même calcul donne 15 décimales de  π = **3.1415926535 89793** 5   
+En javascript le  calcul donne 15 décimales de  π = **3.1415926535 89793** 6    
 
 ## Références :
 
-
+Le site pour tout connaitre de [PI](http://pi314.net/fr/index.php)
 Des formules pour [calculer PI](http://www.gecif.net/articles/mathematiques/pi/)
 
 [1 Milliard de décimales](http://www.gecif.net/articles/mathematiques/pi/pi_decimales.html)
