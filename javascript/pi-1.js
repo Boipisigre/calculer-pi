@@ -2,6 +2,12 @@ function calculateCircumference(radius) {
   return 2 * Math.PI * radius;
 }
 
+function calculatePi() {
+  // (ONE / three.sqrt()).atan()
+  let x = 1.0/ Math.sqrt(3);
+  return 6 *  Math.atan(x);
+}
+
 function calculate_pi(n_terms) {
     m1 = 0.0;
     m2  = 0.0;
@@ -26,3 +32,4 @@ function calculate_pi(n_terms) {
 
 console.log(" Math.PI = " + Math.PI);
 console.log(" PI calculer = " + calculate_pi(15));
+console.log(" PI atan = " + calculatePi());
