@@ -51,6 +51,11 @@ Dans le tableur cal de libreoffice
 
 on trouve sur le net des applications calculants des décimales de pi en voici [une](https://calculatrices.app/calculatrice-de-precision-pi)
 
+### Formul de chudnovsky
+La plus évolué https://en.wikipedia.org/wiki/Chudnovsky_algorithm
+
+$$ \frac{1}{\pi} = 12 \sum^\infty_{q=0} \frac{(-1)^q (6q)! (545140134q + 13591409)}{(3q)!(q!)^3 \left(640320\right)^{3q + \frac32}}  $$
+
 ### Calcul de PI par la formule Arctan
 
  $$ π = 6*arctan(\frac {1} {\sqrt(3)}) $$
