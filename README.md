@@ -17,7 +17,7 @@ Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction ar
 $$ π = 4 \sum_{k=0}^n \frac {(-1)^k} {(2k+1)} $$
 
 
-Cette méthode est peu efficace et demande beaucoup de calcul  toutefois elle est bien pour le benchmark.
+Cette méthode est peu efficace et demande beaucoup de calcul toutefois elle est bien pour un benchmark pour mesurer l'efficacité des languages compilés par rapport aux languages interprétés.
 
 Si on veut n décimales de π, avec une erreur inférieur ou égale à    
 
@@ -28,6 +28,8 @@ Soit une valeur de
 $$ N ​​\geq \frac {10^n -3} {2} $$
 
 Pour 1 milliard d'itération nous obtenons PI avec 9 décimales en 7.92 secondes en rust et 112.76 en python
+
+**TODO**: ecrire la version C standard
 
 ### BBP (Bailey-Borwein-Plouffe)
 la formule est plus compliquée est implique de pouvoir utiliser des grands nombres .
@@ -51,10 +53,15 @@ Dans le tableur cal de libreoffice
 
 on trouve sur le net des applications calculants des décimales de pi en voici [une](https://calculatrices.app/calculatrice-de-precision-pi)
 
-### Formul de chudnovsky
+**TODO** : écrire la version avec GMP
+
+### Formule de chudnovsky
 La plus évolué https://en.wikipedia.org/wiki/Chudnovsky_algorithm
 
 $$ \frac{1}{\pi} = 12 \sum^\infty_{q=0} \frac{(-1)^q (6q)! (545140134q + 13591409)}{(3q)!(q!)^3 \left(640320\right)^{3q + \frac32}}  $$
+
+Ce [code](https://beej.us/blog/data/pi-chudnovsky-gmp/chudnovsky_c.txt) implémentant en C avec la librairie **gmp** donne sur mon ordinateur portable moins de 50s secondes pour calculer 100000 décimales.
+
 
 ### Calcul de PI par la formule Arctan
 
@@ -62,7 +69,8 @@ $$ \frac{1}{\pi} = 12 \sum^\infty_{q=0} \frac{(-1)^q (6q)! (545140134q + 1359140
 
 En Rust cette formule donne 39 décimales de     π = **3.1415926535 8979323846 2643383279 502884197**   
 En Python le même calcul donne 15 décimales de  π = **3.1415926535 89793** 5   
-En javascript le  calcul donne 15 décimales de  π = **3.1415926535 89793** 6    
+En javascript le  calcul donne 15 décimales de  π = **3.1415926535 89793** 6   
+En C avec gmp : à faire
 
 ## Références :
 
@@ -72,3 +80,5 @@ Des formules pour [calculer PI](http://www.gecif.net/articles/mathematiques/pi/)
 [1 Milliard de décimales](http://www.gecif.net/articles/mathematiques/pi/pi_decimales.html)
 
 Les 50 premières décimales **Pi = 3.1415926535 8979323846 2643383279 5028841971 6939937510**
+
+Une utilisation de la [librairie gmp](https://beej.us/blog/data/pi-chudnovsky-gmp/) pour le calcul
