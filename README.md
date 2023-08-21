@@ -81,4 +81,6 @@ Des formules pour [calculer PI](http://www.gecif.net/articles/mathematiques/pi/)
 
 Les 50 premières décimales **Pi = 3.1415926535 8979323846 2643383279 5028841971 6939937510**
 
-Une utilisation de la [librairie gmp](https://beej.us/blog/data/pi-chudnovsky-gmp/) pour le calcul
+Une utilisation de la [librairie gmp](https://beej.us/blog/data/pi-chudnovsky-gmp/) pour le calcul.
+
+les [TP](http://thalesm.hmalherbe.fr/gestclasse/documents/Terminale_NSI/2021-2022/TP/Activite_Decimales_Nombre_PI/Activite_Calcul_des_decimales_du_nombre_PI.html) de terminale NSI sur le sujet.
