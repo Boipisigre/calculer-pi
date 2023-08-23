@@ -20,7 +20,12 @@ def calculate_pi(n_terms: int) -> float:
         m4 = 1 / ((8*i)+5) ;
         m5 = 1 / ((8*i)+6) ;
         pi += m1 * ( m2-m3-m4-m5 );
-        # print(f"iteration {i} π = {pi:1.20f}")
+        # print(f"iteration {i} m1 = {m1:1.20f}")
+        # print(f"iteration {i} m2 = {m2:1.20f}")
+        # print(f"iteration {i} m3 = {m3:1.20f}")
+        # print(f"iteration {i} m4 = {m4:1.20f}")
+        # print(f"iteration {i} m5 = {m5:1.20f}")
+        # print(f"iteration {i} π = {pi:1.20f} \n")
 
     return pi
 
@@ -28,7 +33,7 @@ if __name__ == "__main__":
     start = time()
     pi = calculate_pi(N)
     end = time()
-    print(f"\n final π = {pi:1.15f}")
+    print(f"\n final π = {pi:1.20f}")
     print(f"valeur PI {math.pi:1.6f}")
     print(f"Time elapsed: {(end - start)*1000:1.6f} Milliseconds!")
 

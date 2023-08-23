@@ -29,7 +29,8 @@ $$ N ​​\geq \frac {10^n -3} {2} $$
 
 Pour 1 milliard d'itération nous obtenons PI avec 9 décimales en 7.92 secondes en rust et 112.76 en python
 
-**TODO**: ecrire la version C standard
+la version C standard donne pour 100000000 d'itération 8 décimales en 5 secondes
+
 
 ### BBP (Bailey-Borwein-Plouffe)
 la formule est plus compliquée est implique de pouvoir utiliser des grands nombres .
@@ -41,6 +42,7 @@ Cette méthode est trés efficace et présente d'autres difficultés et limitati
 #### efficacité
 En python on calcule 15 décimales de π en 35 μs  
 En rust on calcule 11 décimales de π en 5 μs
+En C on calcule 18 décimales de π en 2 μs
 
 #### limitations
 En python on ne pas obtenir plus de 15 décimales  à cause des limitations des représentations mémoires des nombres.
