@@ -1,6 +1,6 @@
 /*
-* calcul de pi formule le Leibniz
-gcc -O2 -Wall -o bellardpi bellard.c
+* calcul de pi formule BBP -  algorithme de Bellard
+gcc -O2 -Wall -o bellardpi bellard.c -lm
 */
 
 #include <stdio.h>

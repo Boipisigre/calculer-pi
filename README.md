@@ -7,9 +7,18 @@ Dans une première version, issue du [travail](https://github.com/sarmadgulzar/c
 Vous pouvez [visionner](https://www.youtube.com/watch?v=4nOdO4SDdO0) sa vidéo sur le sujet.
 
 ## Les méthodes de calcul utilisées
-L'objectif est de calculer pour chaque méthode en python et rust les dix premières décimales de π
+L'objectif était de calculer pour chaque méthode en python et rust les dix premières décimales de π.
 
-* 3,1415926535
+* 3,**1415926535**
+
+Suite aux limitations rencontrés avec Rust, j'ai ajouté un versvion C standard ainsi qu'une version utilisant les grands nombres et une méthode permettant elle de calculer de nombreuse décimales.
+
+Pour le fun j'ai ajouté des calculs de π en javascript
+
+* Leibniz-gregory
+* Bailey-Borwein-Plouffe
+* Formule de Chudnovsky
+* Formule Arctan
 
 ### Leibniz-gregory
 Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la Série alternée, elle correspond au développement en série de Taylor de la fonction arctan, évalué au point 1,  pour calculer π.
@@ -34,21 +43,22 @@ la version C standard donne pour 100000000 d'itération 8 décimales en 5 second
 
 
 ### BBP (Bailey-Borwein-Plouffe)
+J'ai utilisé l'algorithme décrit par [Fabrice Bellard](http://pi314.net/fr/bellard.php)
 la formule est plus compliquée est implique de pouvoir utiliser des grands nombres .
 
 $$ π = \sum_{i=0}^n \frac {1} {16^i} (\frac {4} {8i + 1} - \frac {2} {8i + 4} - \frac {1} {8i + 5} - \frac {1} {8i + 5} )$$
 
-Cette méthode est trés efficace et présente d'autres difficultés et limitations
+C'est trés efficace et présente d'autres difficultés et limitations
 
 #### efficacité
 En python on calcule 15 décimales de π en 35 μs  
-En rust on calcule 11 décimales de π en 5 μs
+En rust on calcule 11 décimales de π en 5 μs   
 En C on calcule 18 décimales de π en 2 μs
 
 #### limitations
 En python on ne pas obtenir plus de 15 décimales  à cause des limitations des représentations mémoires des nombres.
 
-En Rust on peut pas obtenir plus de car 16 ^ 9 donne un dépassement de capacité de la fonction **pow**
+En Rust on peut pas obtenir plus de décimales car 16 ^ 9 donne un dépassement de capacité de la fonction **pow**
 
 Dans le tableur cal de libreoffice   
 *  on ne peut pas calculer la valeur de PI par la méthode de Leibniz-gregory.
@@ -65,6 +75,7 @@ $$ \frac{1}{\pi} = 12 \sum^\infty_{q=0} \frac{(-1)^q (6q)! (545140134q + 1359140
 
 Ce [code](https://beej.us/blog/data/pi-chudnovsky-gmp/chudnovsky_c.txt) implémentant en C avec la librairie **gmp** donne sur mon ordinateur portable moins de 50s secondes pour calculer 100000 décimales.
 
+**A faire**: en python
 
 ### Calcul de PI par la formule Arctan
 
@@ -73,6 +84,7 @@ Ce [code](https://beej.us/blog/data/pi-chudnovsky-gmp/chudnovsky_c.txt) impléme
 En Rust cette formule donne 39 décimales de     π = **3.1415926535 8979323846 2643383279 502884197**   
 En Python le même calcul donne 15 décimales de  π = **3.1415926535 89793** 5   
 En javascript le  calcul donne 15 décimales de  π = **3.1415926535 89793** 6   
+En C standard le calcul donne 15 décimales de π = **3.1415926535 89793** 3  
 En C avec gmp : à faire
 
 ## Références :
