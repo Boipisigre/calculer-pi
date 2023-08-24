@@ -12,7 +12,8 @@ L'objectif est de calculer pour chaque méthode en python et rust les dix premi�
 * 3,1415926535
 
 ### Leibniz-gregory
-Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la fonction arctan pour calculer π
+Sarmad Gulzar utilise la formule de **Leibniz-gregory** utilisant la Série alternée, elle correspond au développement en série de Taylor de la fonction arctan, évalué au point 1,  pour calculer π.
+voir le document [ci - joint](doc/2_leibniz-gregory.pdf) de l'académie de Créteil
 
 $$ π = 4 \sum_{k=0}^n \frac {(-1)^k} {(2k+1)} $$
 
